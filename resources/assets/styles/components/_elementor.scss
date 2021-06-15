@@ -22,11 +22,22 @@ section.equal-height div.elementor-widget-wrap > div {
     p:last-child {
         margin-bottom: 0;
     }
+    hr {
+        border-top: solid 1px #9f053e;
+        padding: 10px 0;
+    }
+    &.link-list {
+        a, b, strong {
+            color: $link-color;
+            font-size: 22px;
+            font-weight: normal;
+        }
+    }
 }
 
 .elementor-widget-call-to-action {
     a.elementor-cta:hover {
-        text-decoration: none;;
+        text-decoration: none;
     }
     &.img-border {
         .elementor-cta__bg-wrapper {
@@ -59,6 +70,14 @@ section.equal-height div.elementor-widget-wrap > div {
                   );
                 z-index: 2;
             }
+        }
+    }
+}
+
+.elementor-widget-image-box {
+    &.img-border {
+        .elementor-image-box-img {
+            border: solid 3px #ffffff;
         }
     }
 }
