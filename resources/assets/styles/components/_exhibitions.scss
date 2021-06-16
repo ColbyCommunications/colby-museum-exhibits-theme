@@ -4,12 +4,23 @@
     }
 	&__item {
 		display: flex;
+        border-bottom: solid 1px #cecece;
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+        &:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
         @media #{$phone_media} {
             flex-wrap: wrap;
         }
 		&__image {
 			flex: 0 0 40%;
 			padding-right: 50px;
+            img {
+                border: solid 1px #cecece;
+            }
             @media #{$tablet_media} {
             }
             @media #{$phone_media} {
