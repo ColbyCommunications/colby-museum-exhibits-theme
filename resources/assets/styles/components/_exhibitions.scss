@@ -4,12 +4,27 @@
     }
 	&__item {
 		display: flex;
+        @media #{$phone_media} {
+            flex-wrap: wrap;
+        }
 		&__image {
-			flex: 0 0 33%;
-			padding-right: 20px;
+			flex: 0 0 40%;
+			padding-right: 50px;
+            @media #{$tablet_media} {
+            }
+            @media #{$phone_media} {
+                flex: 0 0 100%;
+                padding-right: 0;
+                padding-bottom: 30px
+            }
 		}
 		&__details {
 			flex: 1;
+            @media #{$tablet_media} {
+            }
+            @media #{$phone_media} {
+                flex: 0 0 100%;
+            }
 		}
 	}
 }
