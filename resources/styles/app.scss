@@ -39,18 +39,18 @@
 
 /* Map Tailwind */
 h1 {
-    @apply text-3xl;
+    font-size: 2.5rem;
     @apply mb-4;
 }
 
 h2 {
-    @apply text-2xl;
+    font-size: 2rem;
     @apply mt-8;
     @apply mb-4;
 }
 
 h3 {
-    @apply text-xl;
+    font-size: 1.75rem;
     @apply mt-6;
     @apply mb-4;
 }
